@@ -1,8 +1,9 @@
 {
   "name": "DebugModeLogger",
   "version": "0.1.0",
-  "summary": "A short description of DebugModeLogger.",
-  "description": "TODO: Add long description of the pod here.",
+  "swift_version": "4.0",
+  "summary": "Debug mode logger",
+  "description": "This is logger to print log only in debug mode for swift.",
   "homepage": "https://github.com/abhisheksingh1/DebugModeLogger",
   "license": {
     "type": "MIT",

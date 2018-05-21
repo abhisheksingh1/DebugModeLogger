@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        logger.DMPrint(value: "***********ViewController SetUp_in_AppDelegate*******")
+        logger.DMPrint("***********ViewController SetUp_in_AppDelegate*******")
     }
 
     override func didReceiveMemoryWarning() {

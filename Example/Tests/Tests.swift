@@ -10,12 +10,12 @@ class DMloggerSpec:QuickSpec {
         describe("Check print log with") {
             let dmLog = DMLog()
             context("DEBUG", closure: {
-                dmLog.setup(isDebug: true)
-                dmLog.DMPrint(value: "***********DEBUG-MODE***********")
+                dmLog.setup(true)
+                dmLog.DMPrint("***********DEBUG-MODE***********")
             })
             context("RELEASE", closure: {
-                dmLog.setup(isDebug: false)
-                dmLog.DMPrint(value: "***********RELEASE-MODE***********")
+                dmLog.setup(false)
+                dmLog.DMPrint("***********RELEASE-MODE***********")
             })
         }
     }

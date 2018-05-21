@@ -14,12 +14,12 @@ public class DMLog {
         self.isDebug = false
     }
     
-    public func setup(isDebug: Bool) {
+    public func setup(_ isDebug: Bool) {
         self.isDebug = isDebug
         print("Project is in Debug mode: \(isDebug)")
     }
     
-    public func DMPrint<T>(value: T) {
+    public func DMPrint<T>(_ value: T) {
         if self.isDebug == true {
             print(value)
         } else {

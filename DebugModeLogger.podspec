@@ -25,7 +25,7 @@ This is logger to print log only in debug mode for swift.
   s.homepage         = 'https://github.com/abhisheksingh1/DebugModeLogger'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'abhisheksingh1' => 'abhishek.singh@snapwiz.com' }
+  s.author           = 'abhisheksingh1'
   s.source           = { :git => 'https://github.com/abhisheksingh1/DebugModeLogger.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
