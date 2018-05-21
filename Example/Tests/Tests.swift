@@ -4,47 +4,21 @@ import Quick
 import Nimble
 import DebugModeLogger
 
-class TableOfContentsSpec: QuickSpec {
+class DMloggerSpec:QuickSpec {
+    
     override func spec() {
-        describe("these will fail") {
-
-            it("can do maths") {
-                expect(1) == 2
-            }
-
-            it("can read") {
-                expect("number") == "string"
-            }
-
-            it("will eventually fail") {
-                expect("time").toEventually( equal("done") )
-            }
-            
-            context("these will pass") {
-
-                it("can do maths") {
-                    expect(23) == 23
-                }
-
-                it("can read") {
-                    expect("🐮") == "🐮"
-                }
-
-                it("will eventually pass") {
-                    var time = "passing"
-
-                    DispatchQueue.main.async {
-                        time = "done"
-                    }
-
-                    waitUntil { done in
-                        Thread.sleep(forTimeInterval: 0.5)
-                        expect(time) == "done"
-
-                        done()
-                    }
-                }
-            }
+        describe("Check print log with") {
+            let dmLog = DMLog()
+            context("DEBUG", closure: {
+                dmLog.setup(isDebug: true)
+                dmLog.DMPrint(value: "***********DEBUG-MODE***********")
+            })
+            context("RELEASE", closure: {
+                dmLog.setup(isDebug: false)
+                dmLog.DMPrint(value: "***********RELEASE-MODE***********")
+            })
         }
     }
 }
+
+

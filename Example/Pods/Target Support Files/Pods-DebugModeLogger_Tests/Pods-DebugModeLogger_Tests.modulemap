@@ -1,0 +1,6 @@
+framework module Pods_DebugModeLogger_Tests {
+  umbrella header "Pods-DebugModeLogger_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
